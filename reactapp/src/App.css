@@ -1,0 +1,122 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clear-theme{
+  color: #000000;
+  background-color: #fff;
+}
+
+.dark-theme{
+  color: #fff;
+  background-color: #252323;
+}
+
+.limit-section{
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+
+.logo{
+  width: 100px;
+  object-fit: cover;
+  background-color: #fff;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.btn-dark{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+  border-radius: 50px;
+  padding: 10px;
+  border: 2px solid #B2987D;
+  width: 100px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.btn-light{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+  border-radius: 50px;
+  padding: 10px;
+  border: 2px solid #B2987D;
+  width: 100px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+
+
+.header button:hover{
+  scale: 1.05;
+}
+
+.header button img{
+  width: 30px;
+}
+
+.header button p{
+  font-weight: bold;
+}
+
+/*Banner*/
+.banner{
+  background-image: url(../src/assets/images/banner-barbearia.jpg);
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content h1{
+  margin: 10px 0;
+}
+
+.content p:first-of-type{
+  font-weight: bold;
+}
+
+.content p{
+  margin: 5px 0;
+}
+
+.sign{
+  font-family: 'Great Vibes', cursive;
+  font-weight: 500;
+  font-size: 40px;
+  color: #B2987D;
+  font-style: italic;
+  padding: 10px 0 ;
+}
+
+@media(max-width:768px) {
+  .limit-section{
+    max-width: 90%;
+  }
+  
+}
