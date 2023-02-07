@@ -1,6 +1,10 @@
 import React from "react";
 import './App.css'
 import { useState } from 'react';
+import sun from "../src/assets/images/sun.png"
+import moon from "../src/assets/images/moon.png"
+import logo from "../src/assets/images/barbearia-logo.png"
+
 
 
 export default function App(){
@@ -13,9 +17,9 @@ export default function App(){
     <div className={darkTheme ? "dark-theme" : "clear-theme"}>
       <header>
         <div className="limit-section header">
-          <img className="logo" src="../src/assets/images/barbearia-logo.png" alt="Logo Barbearia" title='Logo Barbearia'/>
+          <img className="logo" src={logo} alt="Logo Barbearia" title='Logo Barbearia'/>
           <button className={darkTheme ? 'btn-dark' : 'btn-light'} onClick={changeTheme}>
-            <img src={darkTheme ? "../src/assets/images/sun.png" : "../src/assets/images/moon.png"} alt="Imagem lua" title='Imagem lua'/>
+            <img src={darkTheme ? sun : moon} alt="Imagem lua" title='Imagem lua'/>
             <p>{darkTheme ? 'Light' : 'Dark'}</p>
           </button>
         </div>
